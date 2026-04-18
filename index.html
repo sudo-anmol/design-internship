@@ -187,7 +187,7 @@
       </ol>
 
       <div class="apply-cta">
-        <a href="https://github.com/sudo-anmol/design-internship/fork" class="btn btn-primary big" data-magnetic>Fork the repo →</a>
+        <a href="https://github.com/sudo-anmol/design-internship/fork" class="btn btn-primary big" data-magnetic data-fork-modal>Fork the repo →</a>
         <a href="https://github.com/sudo-anmol/design-internship/blob/main/applications/TEMPLATE.md" class="btn btn-ghost big" data-magnetic>View template</a>
       </div>
 
@@ -240,6 +240,49 @@
       </details>
     </section>
   </main>
+
+  <div
+    class="fork-modal"
+    id="fork-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="fork-modal-title"
+    aria-hidden="true"
+  >
+    <div class="fork-modal-backdrop" data-close-modal></div>
+    <div class="fork-modal-panel" role="document">
+      <button class="fork-modal-close" data-close-modal aria-label="Close">esc ✕</button>
+
+      <div class="fm-section fm-head">
+        <div class="fm-title-row">
+          <span class="fm-caret">▶</span>
+          <h2 class="fm-title" id="fork-modal-title">FORK &amp; APPLY</h2>
+        </div>
+        <p class="fm-sub">
+          Launching<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span>
+        </p>
+      </div>
+
+      <div class="fm-rule"></div>
+
+      <div class="fm-section">
+        <h3 class="fm-h">How to apply via PR:</h3>
+        <ol class="fm-steps">
+          <li><span class="fm-n">1.</span><span class="fm-step-body">Fork the repo <span class="fm-muted">(loading below)</span></span></li>
+          <li><span class="fm-n">2.</span><span class="fm-step-body">Create: <code class="fm-code">applications/your-github-username.md</code></span></li>
+          <li><span class="fm-n">3.</span><span class="fm-step-body">In that file, include:</span></li>
+        </ol>
+
+        <pre class="fm-block" aria-hidden="true"><code id="fm-typer"></code></pre>
+
+        <ol class="fm-steps" start="4">
+          <li><span class="fm-n">4.</span><span class="fm-step-body">Open a PR — we review every single one personally.</span></li>
+        </ol>
+
+        <p class="fm-footer">The GitHub fork page will load in a moment<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span></p>
+      </div>
+    </div>
+  </div>
 
   <footer class="foot">
     <div class="foot-inner">
@@ -449,6 +492,91 @@
         },
       });
     });
+
+    // Fork & Apply modal — intercept the fork link, show terminal modal, then redirect
+    (function () {
+      const modal = document.getElementById('fork-modal');
+      const typerEl = document.getElementById('fm-typer');
+      const triggers = document.querySelectorAll('[data-fork-modal]');
+      if (!modal || !triggers.length) return;
+
+      const SAMPLE = [
+        { t: '# Your Name', cls: 'c-comment' },
+        { t: '', cls: '' },
+        { t: '**Portfolio:** your-site.com', cls: 'c-line' },
+        { t: '**LinkedIn:** your profile URL', cls: 'c-line' },
+        { t: '**Recent project:** describe it — what, why, how', cls: 'c-line' },
+        { t: '**Why Amber:** one honest paragraph', cls: 'c-line' },
+      ];
+
+      let typingTimer = null;
+      let redirectTimer = null;
+      let pendingHref = null;
+      let lastFocus = null;
+
+      function openModal(href) {
+        pendingHref = href;
+        lastFocus = document.activeElement;
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('is-open');
+        document.body.classList.add('modal-open');
+
+        typerEl.innerHTML = '';
+        typeOut(SAMPLE, 0, 0);
+
+        const closeBtn = modal.querySelector('.fork-modal-close');
+        if (closeBtn) closeBtn.focus();
+
+        redirectTimer = setTimeout(() => {
+          if (pendingHref) window.location.href = pendingHref;
+        }, 3200);
+      }
+
+      function closeModal(skipRedirect = true) {
+        modal.setAttribute('aria-hidden', 'true');
+        modal.classList.remove('is-open');
+        document.body.classList.remove('modal-open');
+        if (typingTimer) { clearTimeout(typingTimer); typingTimer = null; }
+        if (skipRedirect && redirectTimer) { clearTimeout(redirectTimer); redirectTimer = null; }
+        pendingHref = null;
+        if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+      }
+
+      function typeOut(lines, lineIdx, charIdx) {
+        if (lineIdx >= lines.length) return;
+        const line = lines[lineIdx];
+        if (charIdx === 0) {
+          const span = document.createElement('span');
+          span.className = 'fm-line ' + (line.cls || '');
+          typerEl.appendChild(span);
+          typerEl.appendChild(document.createTextNode('\n'));
+        }
+        const currentSpan = typerEl.querySelectorAll('.fm-line')[lineIdx];
+        if (charIdx < line.t.length) {
+          currentSpan.textContent = line.t.slice(0, charIdx + 1);
+          typingTimer = setTimeout(() => typeOut(lines, lineIdx, charIdx + 1), 14 + Math.random() * 18);
+        } else {
+          typingTimer = setTimeout(() => typeOut(lines, lineIdx + 1, 0), line.t === '' ? 60 : 120);
+        }
+      }
+
+      triggers.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          // Allow modifier-click / middle-click to open natively
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+          e.preventDefault();
+          openModal(btn.getAttribute('href'));
+        });
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target.matches('[data-close-modal]')) closeModal(true);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(true);
+      });
+    })();
   </script>
 </body>
 </html>

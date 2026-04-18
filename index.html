@@ -250,63 +250,45 @@
     <div class="fork-modal-panel" role="document">
       <button class="fork-modal-close" data-close-modal aria-label="Close">esc ✕</button>
 
-      <div class="fm-section fm-head">
+      <div class="fm-head">
         <div class="fm-title-row">
           <span class="fm-caret">▶</span>
           <h2 class="fm-title" id="fork-modal-title">FORK &amp; APPLY</h2>
         </div>
-        <p class="fm-sub">A 60-second walkthrough while GitHub loads.</p>
       </div>
 
-      <div class="fm-rule"></div>
+      <div class="fm-body">
+        <p class="fm-intro">How to apply via PR:</p>
+        <ol class="fm-steps">
+          <li><span class="fm-n">1.</span><span>Fork the repo</span></li>
+          <li><span class="fm-n">2.</span><span>Create <code class="fm-code">applications/your-github-username.md</code></span></li>
+          <li><span class="fm-n">3.</span><span>In that file, include:</span></li>
+        </ol>
 
-      <div class="fm-section">
-        <div class="fm-num">01</div>
-        <h3 class="fm-h">Fork the repository</h3>
-        <p class="fm-p">
-          GitHub will open in a moment — click the green <span class="fm-pill">Create fork</span> button. This copies the repo to your account so you can add your application without touching ours.
-        </p>
+        <pre class="fm-block"><code># Your Name
+
+**Portfolio:** your-site.com
+**LinkedIn:** your profile URL
+**Recent project:** what, why, how
+**Why Amber:** one honest paragraph</code></pre>
+
+        <ol class="fm-steps" start="4">
+          <li><span class="fm-n">4.</span><span>Open a PR — we review every single one personally</span></li>
+        </ol>
       </div>
 
-      <div class="fm-section">
-        <div class="fm-num">02</div>
-        <h3 class="fm-h">Create your application file</h3>
-        <p class="fm-p">
-          Inside your fork, create a new file at <code class="fm-code">applications/your-name.md</code> and paste the template from <code class="fm-code">applications/TEMPLATE.md</code>.
-        </p>
-        <pre class="fm-block"><code>applications/
-  TEMPLATE.md
-  your-name.md   ← you create this</code></pre>
-      </div>
-
-      <div class="fm-section">
-        <div class="fm-num">03</div>
-        <h3 class="fm-h">Fill in 5 things</h3>
-        <ul class="fm-list">
-          <li><span class="fm-bullet">→</span> Your name</li>
-          <li><span class="fm-bullet">→</span> Portfolio link</li>
-          <li><span class="fm-bullet">→</span> LinkedIn</li>
-          <li><span class="fm-bullet">→</span> A project you've shipped recently</li>
-          <li><span class="fm-bullet">→</span> Why you want to join Amber</li>
-        </ul>
-        <p class="fm-p fm-quiet">
-          Be specific, be honest, skip "passionate about design."
-        </p>
-      </div>
-
-      <div class="fm-section">
-        <div class="fm-num">04</div>
-        <h3 class="fm-h">Open a pull request</h3>
-        <p class="fm-p">
-          Title it <code class="fm-code">Application: Your Name</code>. We read every single one. You'll hear back within a week.
-        </p>
-      </div>
-
-      <div class="fm-rule"></div>
-
-      <div class="fm-loader" aria-live="polite">
-        <span class="fm-loader-bar"><span class="fm-loader-fill"></span></span>
-        <span class="fm-loader-label">Opening GitHub<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span></span>
+      <div class="fm-foot">
+        <div class="fm-loader" aria-live="polite">
+          <span class="fm-loader-bar"><span class="fm-loader-fill"></span></span>
+          <span class="fm-loader-label" data-loader-label>Preparing<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span></span>
+        </div>
+        <a
+          href="https://github.com/sudo-anmol/design-internship/fork"
+          class="fm-proceed"
+          data-proceed
+          aria-disabled="true"
+          tabindex="-1"
+        >Proceed to GitHub →</a>
       </div>
     </div>
   </div>
@@ -341,36 +323,44 @@
     }, { passive: true });
 
     (function () {
-      const REDIRECT_MS = 4200;
+      const READY_MS = 3000;
       const modal = document.getElementById('fork-modal');
       const triggers = document.querySelectorAll('[data-fork-modal]');
-      if (!modal || !triggers.length) return;
+      const proceed = modal && modal.querySelector('[data-proceed]');
+      const loaderLabel = modal && modal.querySelector('[data-loader-label]');
+      if (!modal || !triggers.length || !proceed) return;
 
-      let redirectTimer = null;
-      let pendingHref = null;
+      let readyTimer = null;
       let lastFocus = null;
 
       function openModal(href) {
-        pendingHref = href;
         lastFocus = document.activeElement;
+        proceed.setAttribute('href', href);
+        proceed.setAttribute('aria-disabled', 'true');
+        proceed.setAttribute('tabindex', '-1');
+        if (loaderLabel) loaderLabel.innerHTML = 'Preparing<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span>';
         modal.setAttribute('aria-hidden', 'false');
         modal.classList.add('is-open');
+        modal.classList.remove('is-ready');
         document.body.classList.add('modal-open');
-        modal.style.setProperty('--fm-duration', REDIRECT_MS + 'ms');
+        modal.style.setProperty('--fm-duration', READY_MS + 'ms');
         requestAnimationFrame(() => modal.classList.add('is-loading'));
         const closeBtn = modal.querySelector('.fork-modal-close');
         if (closeBtn) closeBtn.focus();
-        redirectTimer = setTimeout(() => {
-          if (pendingHref) window.location.href = pendingHref;
-        }, REDIRECT_MS);
+        readyTimer = setTimeout(() => {
+          modal.classList.add('is-ready');
+          proceed.setAttribute('aria-disabled', 'false');
+          proceed.setAttribute('tabindex', '0');
+          if (loaderLabel) loaderLabel.textContent = 'Ready';
+          proceed.focus();
+        }, READY_MS);
       }
 
       function closeModal() {
         modal.setAttribute('aria-hidden', 'true');
-        modal.classList.remove('is-open', 'is-loading');
+        modal.classList.remove('is-open', 'is-loading', 'is-ready');
         document.body.classList.remove('modal-open');
-        if (redirectTimer) { clearTimeout(redirectTimer); redirectTimer = null; }
-        pendingHref = null;
+        if (readyTimer) { clearTimeout(readyTimer); readyTimer = null; }
         if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
       }
 
@@ -380,6 +370,9 @@
           e.preventDefault();
           openModal(btn.getAttribute('href'));
         });
+      });
+      proceed.addEventListener('click', (e) => {
+        if (proceed.getAttribute('aria-disabled') === 'true') { e.preventDefault(); }
       });
       modal.addEventListener('click', (e) => {
         if (e.target.matches('[data-close-modal]')) closeModal();

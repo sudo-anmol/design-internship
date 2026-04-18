@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#apply">skip to apply ↓</a>
@@ -50,18 +48,18 @@
         </div>
       </div>
 
-      <h1 class="h1" data-anim="headline">
+      <h1 class="h1">
         Most design internships <em>have you pushing pixels</em> and waiting for feedback.
         <span class="h1-accent">This one's different.</span>
       </h1>
 
-      <p class="lede" data-anim="fade-up">
+      <p class="lede">
         At AmberStudent, we're building the global platform students trust to find a home abroad — tools used by millions, decisions that affect real lives. We're hiring an <strong>AI Product Design Intern</strong> who doesn't think like a traditional designer.
       </p>
 
-      <div class="cta-row" data-anim="fade-up">
-        <a href="#apply" class="btn btn-primary" data-magnetic>Apply via pull request →</a>
-        <a href="#role" class="btn btn-ghost" data-magnetic>Read the role</a>
+      <div class="cta-row">
+        <a href="#apply" class="btn btn-primary">Apply via pull request →</a>
+        <a href="#role" class="btn btn-ghost">Read the role</a>
       </div>
     </section>
 
@@ -187,8 +185,8 @@
       </ol>
 
       <div class="apply-cta">
-        <a href="https://github.com/sudo-anmol/design-internship/fork" class="btn btn-primary big" data-magnetic data-fork-modal>Fork the repo →</a>
-        <a href="https://github.com/sudo-anmol/design-internship/blob/main/applications/TEMPLATE.md" class="btn btn-ghost big" data-magnetic>View template</a>
+        <a href="https://github.com/sudo-anmol/design-internship/fork" class="btn btn-primary big" data-fork-modal>Fork the repo →</a>
+        <a href="https://github.com/sudo-anmol/design-internship/blob/main/applications/TEMPLATE.md" class="btn btn-ghost big">View template</a>
       </div>
 
       <p class="fine">
@@ -209,7 +207,6 @@
         <a
           href="mailto:shashi.k@amberstudent.com?cc=careers@amberstudent.com&subject=Application%3A%20AI%20Product%20Design%20Intern&body=Hi%20team%2C%0A%0AI%27m%20applying%20for%20the%20AI%20Product%20Design%20Intern%20role%20at%20Amber.%0A%0A1.%20Name%3A%0A2.%20Portfolio%3A%0A3.%20LinkedIn%3A%0A4.%20A%20project%20I%27ve%20shipped%20recently%3A%0A%0A5.%20Why%20I%20want%20to%20join%20Amber%3A%0A%0A%E2%80%94"
           class="btn btn-ghost big"
-          data-magnetic
         >✉ Email your application →</a>
         <p class="fine email-fine">
           Clicking opens your mail app with a pre-filled template. You can edit anything before sending.
@@ -258,28 +255,58 @@
           <span class="fm-caret">▶</span>
           <h2 class="fm-title" id="fork-modal-title">FORK &amp; APPLY</h2>
         </div>
-        <p class="fm-sub">
-          Launching<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span>
-        </p>
+        <p class="fm-sub">A 60-second walkthrough while GitHub loads.</p>
       </div>
 
       <div class="fm-rule"></div>
 
       <div class="fm-section">
-        <h3 class="fm-h">How to apply via PR:</h3>
-        <ol class="fm-steps">
-          <li><span class="fm-n">1.</span><span class="fm-step-body">Fork the repo <span class="fm-muted">(loading below)</span></span></li>
-          <li><span class="fm-n">2.</span><span class="fm-step-body">Create: <code class="fm-code">applications/your-github-username.md</code></span></li>
-          <li><span class="fm-n">3.</span><span class="fm-step-body">In that file, include:</span></li>
-        </ol>
+        <div class="fm-num">01</div>
+        <h3 class="fm-h">Fork the repository</h3>
+        <p class="fm-p">
+          GitHub will open in a moment — click the green <span class="fm-pill">Create fork</span> button. This copies the repo to your account so you can add your application without touching ours.
+        </p>
+      </div>
 
-        <pre class="fm-block" aria-hidden="true"><code id="fm-typer"></code></pre>
+      <div class="fm-section">
+        <div class="fm-num">02</div>
+        <h3 class="fm-h">Create your application file</h3>
+        <p class="fm-p">
+          Inside your fork, create a new file at <code class="fm-code">applications/your-name.md</code> and paste the template from <code class="fm-code">applications/TEMPLATE.md</code>.
+        </p>
+        <pre class="fm-block"><code>applications/
+  TEMPLATE.md
+  your-name.md   ← you create this</code></pre>
+      </div>
 
-        <ol class="fm-steps" start="4">
-          <li><span class="fm-n">4.</span><span class="fm-step-body">Open a PR — we review every single one personally.</span></li>
-        </ol>
+      <div class="fm-section">
+        <div class="fm-num">03</div>
+        <h3 class="fm-h">Fill in 5 things</h3>
+        <ul class="fm-list">
+          <li><span class="fm-bullet">→</span> Your name</li>
+          <li><span class="fm-bullet">→</span> Portfolio link</li>
+          <li><span class="fm-bullet">→</span> LinkedIn</li>
+          <li><span class="fm-bullet">→</span> A project you've shipped recently</li>
+          <li><span class="fm-bullet">→</span> Why you want to join Amber</li>
+        </ul>
+        <p class="fm-p fm-quiet">
+          Be specific, be honest, skip "passionate about design."
+        </p>
+      </div>
 
-        <p class="fm-footer">The GitHub fork page will load in a moment<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <div class="fm-section">
+        <div class="fm-num">04</div>
+        <h3 class="fm-h">Open a pull request</h3>
+        <p class="fm-p">
+          Title it <code class="fm-code">Application: Your Name</code>. We read every single one. You'll hear back within a week.
+        </p>
+      </div>
+
+      <div class="fm-rule"></div>
+
+      <div class="fm-loader" aria-live="polite">
+        <span class="fm-loader-bar"><span class="fm-loader-fill"></span></span>
+        <span class="fm-loader-label">Opening GitHub<span class="fm-dots"><span>.</span><span>.</span><span>.</span></span></span>
       </div>
     </div>
   </div>
@@ -297,7 +324,6 @@
   </footer>
 
   <script>
-    // active-nav highlight via IntersectionObserver
     const links = document.querySelectorAll('.nav-links a');
     const sections = [...document.querySelectorAll('section[id]')];
     const io = new IntersectionObserver((entries) => {
@@ -310,206 +336,16 @@
     }, { rootMargin: '-40% 0px -55% 0px' });
     sections.forEach((s) => io.observe(s));
 
-    // GSAP animations — respects prefers-reduced-motion, gracefully no-ops if GSAP missed
-    // Safety: if GSAP fails to load within 1.5s, force-reveal all animated content
-    setTimeout(() => {
-      if (!window.gsap) document.body.classList.add('no-gsap');
-    }, 1500);
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
 
-    window.addEventListener('load', () => {
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (prefersReduced || !window.gsap) {
-        document.body.classList.add('no-gsap');
-        return;
-      }
-
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.defaults({ ease: 'power3.out' });
-
-      // Hero headline — word-by-word reveal
-      const headline = document.querySelector('[data-anim="headline"]');
-      if (headline) {
-        const wrapWords = (el) => {
-          el.childNodes.forEach((node) => {
-            if (node.nodeType === Node.TEXT_NODE) {
-              const frag = document.createDocumentFragment();
-              node.textContent.split(/(\s+)/).forEach((part) => {
-                if (/^\s+$/.test(part)) {
-                  frag.appendChild(document.createTextNode(part));
-                } else if (part.length) {
-                  const span = document.createElement('span');
-                  span.className = 'w';
-                  span.textContent = part;
-                  frag.appendChild(span);
-                }
-              });
-              node.parentNode.replaceChild(frag, node);
-            } else if (node.nodeType === Node.ELEMENT_NODE) {
-              wrapWords(node);
-            }
-          });
-        };
-        wrapWords(headline);
-        gsap.from(headline.querySelectorAll('.w'), {
-          yPercent: 110,
-          opacity: 0,
-          duration: 0.9,
-          stagger: 0.03,
-          delay: 0.1,
-        });
-      }
-
-      // Hero lede + CTA row
-      gsap.utils.toArray('.hero [data-anim="fade-up"]').forEach((el, i) => {
-        gsap.from(el, {
-          y: 24,
-          opacity: 0,
-          duration: 0.8,
-          delay: 0.6 + i * 0.1,
-        });
-      });
-
-      // Terminal: subtle rise + fade
-      gsap.from('.terminal', {
-        y: 30,
-        opacity: 0,
-        duration: 0.9,
-        delay: 0.05,
-      });
-
-      // Section heads reveal on scroll
-      gsap.utils.toArray('.section-head').forEach((el) => {
-        gsap.from(el, {
-          y: 28,
-          opacity: 0,
-          duration: 0.7,
-          scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Role list items
-      gsap.utils.toArray('.list li').forEach((el, i) => {
-        gsap.from(el, {
-          x: -20,
-          opacity: 0,
-          duration: 0.55,
-          delay: i * 0.06,
-          scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Cards (the 6 "what we're looking for" cards) — stagger on grid entry
-      const grid = document.querySelector('.grid');
-      if (grid) {
-        gsap.from(grid.children, {
-          y: 30,
-          opacity: 0,
-          duration: 0.6,
-          stagger: 0.08,
-          scrollTrigger: { trigger: grid, start: 'top 80%', toggleActions: 'play none none none' },
-        });
-      }
-
-      // "What you'll get" items
-      gsap.utils.toArray('.get-item').forEach((el, i) => {
-        gsap.from(el, {
-          y: 24,
-          opacity: 0,
-          duration: 0.6,
-          delay: (i % 2) * 0.08,
-          scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Fine-print rows cascade
-      gsap.utils.toArray('.kv > div').forEach((el, i) => {
-        gsap.from(el, {
-          x: -16,
-          opacity: 0,
-          duration: 0.5,
-          delay: i * 0.08,
-          scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Apply steps — pop in sequence
-      gsap.utils.toArray('.steps li').forEach((el, i) => {
-        gsap.from(el, {
-          y: 26,
-          opacity: 0,
-          scale: 0.98,
-          duration: 0.55,
-          delay: i * 0.1,
-          scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Email-apply block
-      gsap.from('.email-apply', {
-        y: 20,
-        opacity: 0,
-        duration: 0.7,
-        scrollTrigger: { trigger: '.or-divider', start: 'top 85%', toggleActions: 'play none none none' },
-      });
-      gsap.from('.or-divider .or-line', {
-        scaleX: 0,
-        duration: 0.9,
-        transformOrigin: 'center',
-        scrollTrigger: { trigger: '.or-divider', start: 'top 85%', toggleActions: 'play none none none' },
-      });
-
-      // FAQ reveal
-      gsap.utils.toArray('.faq details').forEach((el, i) => {
-        gsap.from(el, {
-          y: 16,
-          opacity: 0,
-          duration: 0.45,
-          delay: i * 0.06,
-          scrollTrigger: { trigger: el, start: 'top 92%', toggleActions: 'play none none none' },
-        });
-      });
-
-      // Magnetic buttons — subtle pull toward cursor
-      document.querySelectorAll('[data-magnetic]').forEach((btn) => {
-        const strength = 0.25;
-        btn.addEventListener('mousemove', (e) => {
-          const r = btn.getBoundingClientRect();
-          const x = (e.clientX - r.left - r.width / 2) * strength;
-          const y = (e.clientY - r.top - r.height / 2) * strength;
-          gsap.to(btn, { x, y, duration: 0.3, ease: 'power3.out' });
-        });
-        btn.addEventListener('mouseleave', () => {
-          gsap.to(btn, { x: 0, y: 0, duration: 0.4, ease: 'elastic.out(1, 0.4)' });
-        });
-      });
-
-      // Nav shrink on scroll
-      ScrollTrigger.create({
-        start: 80,
-        end: 'max',
-        onUpdate: (self) => {
-          document.querySelector('.nav').classList.toggle('scrolled', self.progress > 0);
-        },
-      });
-    });
-
-    // Fork & Apply modal — intercept the fork link, show terminal modal, then redirect
     (function () {
+      const REDIRECT_MS = 4200;
       const modal = document.getElementById('fork-modal');
-      const typerEl = document.getElementById('fm-typer');
       const triggers = document.querySelectorAll('[data-fork-modal]');
       if (!modal || !triggers.length) return;
 
-      const SAMPLE = [
-        { t: '# Your Name', cls: 'c-comment' },
-        { t: '', cls: '' },
-        { t: '**Portfolio:** your-site.com', cls: 'c-line' },
-        { t: '**LinkedIn:** your profile URL', cls: 'c-line' },
-        { t: '**Recent project:** describe it — what, why, how', cls: 'c-line' },
-        { t: '**Why Amber:** one honest paragraph', cls: 'c-line' },
-      ];
-
-      let typingTimer = null;
       let redirectTimer = null;
       let pendingHref = null;
       let lastFocus = null;
@@ -520,61 +356,36 @@
         modal.setAttribute('aria-hidden', 'false');
         modal.classList.add('is-open');
         document.body.classList.add('modal-open');
-
-        typerEl.innerHTML = '';
-        typeOut(SAMPLE, 0, 0);
-
+        modal.style.setProperty('--fm-duration', REDIRECT_MS + 'ms');
+        requestAnimationFrame(() => modal.classList.add('is-loading'));
         const closeBtn = modal.querySelector('.fork-modal-close');
         if (closeBtn) closeBtn.focus();
-
         redirectTimer = setTimeout(() => {
           if (pendingHref) window.location.href = pendingHref;
-        }, 3200);
+        }, REDIRECT_MS);
       }
 
-      function closeModal(skipRedirect = true) {
+      function closeModal() {
         modal.setAttribute('aria-hidden', 'true');
-        modal.classList.remove('is-open');
+        modal.classList.remove('is-open', 'is-loading');
         document.body.classList.remove('modal-open');
-        if (typingTimer) { clearTimeout(typingTimer); typingTimer = null; }
-        if (skipRedirect && redirectTimer) { clearTimeout(redirectTimer); redirectTimer = null; }
+        if (redirectTimer) { clearTimeout(redirectTimer); redirectTimer = null; }
         pendingHref = null;
         if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
       }
 
-      function typeOut(lines, lineIdx, charIdx) {
-        if (lineIdx >= lines.length) return;
-        const line = lines[lineIdx];
-        if (charIdx === 0) {
-          const span = document.createElement('span');
-          span.className = 'fm-line ' + (line.cls || '');
-          typerEl.appendChild(span);
-          typerEl.appendChild(document.createTextNode('\n'));
-        }
-        const currentSpan = typerEl.querySelectorAll('.fm-line')[lineIdx];
-        if (charIdx < line.t.length) {
-          currentSpan.textContent = line.t.slice(0, charIdx + 1);
-          typingTimer = setTimeout(() => typeOut(lines, lineIdx, charIdx + 1), 14 + Math.random() * 18);
-        } else {
-          typingTimer = setTimeout(() => typeOut(lines, lineIdx + 1, 0), line.t === '' ? 60 : 120);
-        }
-      }
-
       triggers.forEach((btn) => {
         btn.addEventListener('click', (e) => {
-          // Allow modifier-click / middle-click to open natively
           if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
           e.preventDefault();
           openModal(btn.getAttribute('href'));
         });
       });
-
       modal.addEventListener('click', (e) => {
-        if (e.target.matches('[data-close-modal]')) closeModal(true);
+        if (e.target.matches('[data-close-modal]')) closeModal();
       });
-
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(true);
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
       });
     })();
   </script>

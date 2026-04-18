@@ -6,7 +6,7 @@
 We're hiring an **AI Product Design Intern** at [AmberStudent](https://amberstudent.com) — someone who doesn't think like a traditional designer.
 
 **Location:** Pune · 5 days onsite
-**Stipend:** ₹75,000 / month
+**Stipend:** ₹25,000 / month
 **Duration:** 6 months, with offer to convert
 **Start:** ASAP
 

@@ -11,7 +11,7 @@ https://aniketjdr.framer.website
 
 ## 3. LinkedIn
 
-https://linkedin.com/in/aniketjdr
+https://www.linkedin.com/in/aniketjdr
 
 ## 4. A project you've shipped recently
 

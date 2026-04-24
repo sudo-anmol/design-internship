@@ -8,8 +8,8 @@ Jagadeeshwar Bonnada
 
 ## 2. Portfolio
 
-[GitHub]([(https://github.com/Jagadeeshwar45)])                      
-[Web application that I built]([url](https://split-mint-sandy.vercel.app/))
+[GitHub](https://github.com/Jagadeeshwar45)                      
+[Web application that I built](https://split-mint-sandy.vercel.app/)
 
 ## 3. LinkedIn
 
@@ -17,7 +17,7 @@ Jagadeeshwar Bonnada
 
 ## 4. A project you've shipped recently
 
-[GoodFoods AI Reservation System  ]([url](https://github.com/Jagadeeshwar45/Restaurant-Reservation-System))
+[GoodFoods AI Reservation System  ](https://github.com/Jagadeeshwar45/Restaurant-Reservation-System)
 
 I recently built an AI-powered restaurant reservation platform that allows users to book tables using natural language. I designed the full product flow and built the backend logic using Python, Streamlit, SQLite, and LLM APIs. The system could search restaurants, recommend options, create bookings, and handle cancellations conversationally. If I were improving it now, I’d redesign the UI into a cleaner production-grade experience with stronger visual hierarchy and mobile-first interactions.
 

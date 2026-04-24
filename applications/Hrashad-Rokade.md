@@ -16,7 +16,7 @@ https://www.linkedin.com/in/harshadrokade-design/
 
 https://harshadrokade.online/loft-ai
 
-Few months ago, I worked on Loft, an AI-powered bookmarking app that helps users save and rediscover content. I handled the end-to-end design, including structuring user flows, designing high-fidelity UI, and iterating based on feedback from the client and my senior designer. If I were to improve it further, I would focus on validating the experience with real users and refining AI-driven recommendations based on actual usage patterns.
+Few months ago, I worked on Loft, an AI-powered bookmarking app that helps users save and rediscover content. I handled the end to end design, including structuring user flows, designing high fidelity UI, and iterating based on feedback from the client and my senior designer. If I were to improve it further, I would focus on validating the experience with real users and refining AI driven recommendations based on actual usage patterns.
 
 ## 5. Why you want to join Amber
 

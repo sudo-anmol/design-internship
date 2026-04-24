@@ -17,8 +17,8 @@ www.linkedin.com/in/abhishek-deshpande-943316249
 
 
 ## 4. A project you've shipped recently
-I recently built PulseAI, an end-to-end campaign analytics platform that processes 100+ marketing campaigns and automatically detects performance anomalies using statistical methods. I designed the dashboard flow, focusing on simplifying complex data into clear, actionable insights through visual hierarchy and natural language outputs.
-Looking back, I would improve the UX by reducing cognitive load further, especially in multi-campaign comparison views, and refine interaction design to make insights more intuitive for non-technical users.
+I recently built PulseAI, an end-to-end campaign analytics platform that processes 100+ marketing campaigns and detects performance anomalies using statistical methods. I focused on designing the dashboard flow to simplify complex data into clear, actionable insights.
+Looking back, I would reduce cognitive load in multi-campaign views and improve interaction design to make insights more intuitive for non-technical users.
 
 
 ## 5. Why you want to join Amber

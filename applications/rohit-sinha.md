@@ -33,7 +33,7 @@ Marquee — Smooth infinite scroll of all integrations replaces the static logo 
 
 ## 5. Why you want to join Amber
 
-_Finding student accommodation was chaos — opaque listings, unresponsive landlords, no real sense of what I was signing up for. That experience stuck with me. Amber is solving exactly that moment: when students are stressed, far from home, and trying to make a big decision with very little to go on. That's the kind of problem I want to design for, and Amber is actually doing it at scale._
+_Finding student accommodation was chaos, opaque listings, unresponsive landlords, no real sense of what I was signing up for. That experience stuck with me. Amber is solving exactly that moment: when students are stressed, far from home, and trying to make a big decision with very little to go on. That's the kind of problem I want to design for, and Amber is actually doing it at scale._
 
 ---
 

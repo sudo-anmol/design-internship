@@ -22,8 +22,10 @@ _https://www.linkedin.com/in/rohit-sinha-9972a91bb/_
 _https://www.figma.com/design/gjH8bz0VPVnkhfh3sCdqBh/Abun-Website-Landing-Page?m=auto&t=Ef23A5LCR8VaMuBI-6
 What's changed vs. the original:
 
-Typography — Bebas Neue display font for punchy headers (vs. generic sans), paired with DM Sans for body. Hierarchy is immediate and bold.
-Color system — Near-black background with a single electric lime accent instead of the original white/blue scheme. Every element feels intentional.
+Typography — Bebas Neue display font for punchy headers (vs. generic sans), paired with DM Sans for body. 
+Hierarchy is immediate and bold.
+Color system — Near-black background with a single electric lime accent instead of the original white/blue scheme. 
+Every element feels intentional.
 Layout — Grid-based tool cards with hover line reveals, full-width stats bar in lime, asymmetric hero with partner badges sidebar.
 Animations — Scroll-triggered fade-ups on every section, animated counter in the stats bar, marquee ticker for integrations.
 Pricing — Clean 3-column cards with the Growth plan visually elevated using a lime border + "Most Popular" badge.

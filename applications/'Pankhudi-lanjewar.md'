@@ -1,0 +1,32 @@
+# Application: [Pankhudi Lanjewar]
+
+> **Instructions:** Copy this file to `applications/your-name.md` (use kebab-case — e.g. `priya-sharma.md`).
+> Fill in each of the 5 sections below. Delete these instructions before you open your PR.
+
+---
+
+## 1. Name
+
+_Pankhudi Lanjewar_
+
+## 2. Portfolio
+
+_https://www.figma.com/deck/juYVSIInF4miaUFRYRAtgL/Selected-Design-Work---Pankhudi-Lanjewar?node-id=1-26&t=1N8pO3NIPOml5qKA-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1_
+
+## 3. LinkedIn
+
+_https://www.linkedin.com/in/pankhudi-lanjewar-541871185/_
+
+## 4. A project you've shipped recently
+
+_I redesigned Palletbees an enterprise platform that converts complex Excel data into Oracle WMS APIs. I took fragmented developer built screens and established a functional design system using Archivo and Work Sans to improve data legibility and reduce cognitive load for logistics operators. 
+If I were to redesign it today i would improve the error handling because it is  passive, static red text that’s easily missed in high density tables and implement the "Active Validation." By using state aware field highlights and contextual tooltips  the interface guides the user in real time. This reduces cognitive load and makes a complex enterprise tool feel more intuitive and human.
+Link - https://www.figma.com/deck/hE6X61AaoxpwrdcbmXTALy/Palletbees---slides?node-id=1-8996&viewport=-100%2C-68%2C0.48&t=l8FQDtCAayWLuCKS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1_
+
+## 5. Why you want to join Amber
+
+_Amber stands out to me because it solves a problem that can deeply affect a student’s confidence, comfort, and ability to settle into a new country. A close friend of mine struggled with housing after moving abroad, dealing with overpriced temporary stays and unreliable rental situations, so I’ve seen how stressful and vulnerable that experience can be. What pulls me to Amber is the trust you create through verified listings and the way you focus specifically on international students who need clarity and security during a major life transition. As an AI Product Design Intern, I’d love to contribute with strong UX thinking, user research, and visual storytelling to help make that journey feel simpler, safer, and more human_
+
+---
+
+_By opening this PR you confirm the work above is yours and that you've read [the role](https://github.com/sudo-anmol/design-internship)._

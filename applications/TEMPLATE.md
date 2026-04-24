@@ -1,4 +1,4 @@
-# Application: [Your Name]
+# Application: [Soumya Rath ]
 
 > **Instructions:** Copy this file to `applications/your-name.md` (use kebab-case — e.g. `priya-sharma.md`).
 > Fill in each of the 5 sections below. Delete these instructions before you open your PR.
@@ -7,24 +7,26 @@
 
 ## 1. Name
 
-_Your full name._
+_Soumya Rath._
 
 ## 2. Portfolio
 
-_Link to your portfolio, site, Dribbble, Behance, Notion — anywhere we can see your work._
+_https://soumyaportfolio26.framer.website/._
 
 ## 3. LinkedIn
 
-_Link to your LinkedIn profile._
+._(https://www.linkedin.com/in/soumya-rath/)._
 
 ## 4. A project you've shipped recently
 
-_Link to something you've shipped in the last 6–12 months. Add 2–4 sentences: what it is, what you did on it, and what you'd change now._
-
+(https://soumyaportfolio26.framer.website/cobalt-oak/co)_
+this is my passion project i dream to make it a reality one day,id tweak its ui and  improve its accessibility more.
 ## 5. Why you want to join Amber
 
-_3–5 sentences. Please don't write "I'm passionate about design." Tell us what specifically pulls you to Amber — the product, the students we serve, the team, the problem space. Be honest._
-
+Hi Team,
+Amber solving student housing feels personal,I’ve lived the Pune house-hunt chaos, and what you’re building genuinely reduces that mental load. I’d love to do the same on the product side—help ship faster, cleaner design solutions and make life easier for your PMs. I thrive on sharp feedback, move fast, and bring good energy to the room—so I think I’ll fit right in.
+Best,
+Soumya Rath
 ---
 
 _By opening this PR you confirm the work above is yours and that you've read [the role](https://github.com/sudo-anmol/design-internship)._

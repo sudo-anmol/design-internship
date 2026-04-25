@@ -1,30 +1,22 @@
-# Application: [Your Name]
-
-> **Instructions:** Copy this file to `applications/your-name.md` (use kebab-case — e.g. `priya-sharma.md`).
-> Fill in each of the 5 sections below. Delete these instructions before you open your PR.
-
----
+# Application: Varshini Duggireddy
 
 ## 1. Name
-
-_Your full name._
+Varshini Duggireddy
 
 ## 2. Portfolio
-
-_Link to your portfolio, site, Dribbble, Behance, Notion — anywhere we can see your work._
+https://github.com/DuggireddyVarshini
 
 ## 3. LinkedIn
-
-_Link to your LinkedIn profile._
+https://www.linkedin.com/in/duggireddyvarshini
 
 ## 4. A project you've shipped recently
+I recently built a resume–job matching system that compares a candidate’s resume with a job description and shows how well they match. I worked on data cleaning, extracting skills and experience using NLP, and building a similarity-based scoring system.
 
-_Link to something you've shipped in the last 6–12 months. Add 2–4 sentences: what it is, what you did on it, and what you'd change now._
+It helped me understand how messy real-world data can be and how important it is to iterate and test continuously. If I improve it now, I would focus more on improving accuracy with better embeddings and making the UI more user-friendly for non-technical users.
 
 ## 5. Why you want to join Amber
+I want to join Amber because it feels like a place where design, product, and AI come together to solve a real and meaningful problem—helping students find homes in new countries.
 
-_3–5 sentences. Please don't write "I'm passionate about design." Tell us what specifically pulls you to Amber — the product, the students we serve, the team, the problem space. Be honest._
+I like working on products that impact real-life decisions instead of mock projects. The focus on generative UI and AI-driven workflows really excites me because I’ve been exploring AI tools in my own projects as well.
 
----
-
-_By opening this PR you confirm the work above is yours and that you've read [the role](https://github.com/sudo-anmol/design-internship)._
+I also like the builder mindset culture where people are expected to think beyond titles and actually ship things. I want to learn how real product decisions are made in such an environment and contribute while improving my design and product thinking skills.

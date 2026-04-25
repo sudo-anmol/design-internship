@@ -7,11 +7,12 @@ Shriharee Panchal
 https://shriharee-panchal-551ac8.netlify.app
 
 ## 3. LinkedIn
-https://linkedin.com/in/shriharee-panchal
+https://www.linkedin.com/in/shriharee-panchal-6413a8291
 
 ## 4. A project you've shipped recently
 
-**Agentic RAG Chatbot** — github.com/shrihareepanchal
+**Agentic RAG Chatbot** — [github.com/shrihareepanchal](https://github.com/shrihareepanchal/Agentic_rag_chatbo)
+**Live Demo** - [github.com/shrihareepanchal](https://agentic-rag-chatbot-db4q.onrender.com/)
 
 Built an end-to-end Agentic RAG system using LangGraph 
 and ChromaDB that handles 6 file formats, routes queries 

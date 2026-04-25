@@ -11,7 +11,7 @@ https://www.linkedin.com/in/shriharee-panchal-6413a8291
 
 ## 4. A project you've shipped recently
 
-**Agentic RAG Chatbot** — [github.com/shrihareepanchal](https://github.com/shrihareepanchal/Agentic_rag_chatbo)
+**Agentic RAG Chatbot** — [github.com/shrihareepanchal](https://github.com/shrihareepanchal/Agentic_rag_chatbot)
 **Live Demo** - [github.com/shrihareepanchal](https://agentic-rag-chatbot-db4q.onrender.com/)
 
 Built an end-to-end Agentic RAG system using LangGraph 

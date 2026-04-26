@@ -14,8 +14,6 @@ www.linkedin.com/in/cynthia-pachal
 ## 4. A project you've shipped recently
 InstaPreps AI (GitLab – collaborative project)
 
-InstaPreps AI (GitLab – collaborative project)
-
 I contributed to building an AI-powered study platform where I improved the UI and implemented partner API integrations through multiple merge requests. My focus was on making the product usable and closer to real user workflows rather than static designs. I used AI tools to speed up development and refine workflows. If I revisit it, I would improve personalization and introduce adaptive learning features for a more tailored experience.
 
 GitLab: https://gitlab.com/cynthiax04

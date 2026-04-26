@@ -11,19 +11,25 @@ Neelakantam Shiva Ram Prasad
 
 ## 2. Portfolio
 
-_Link to your portfolio, site, Dribbble, Behance, Notion — anywhere we can see your work._
+https://shivaramuiuxdesigner-ai.github.io/Portfolio/
 
 ## 3. LinkedIn
 
-_Link to your LinkedIn profile._
+www.linkedin.com/in/shivaramprasaduiuxdesigner
 
 ## 4. A project you've shipped recently
 
-_Link to something you've shipped in the last 6–12 months. Add 2–4 sentences: what it is, what you did on it, and what you'd change now._
+FlowFund — Personal Finance iOS App (2025)
+shivaramuiuxdesigner-ai.github.io/Portfolio
+
+FlowFund is a personal finance app I designed for freelancers with irregular income, covering everything from research to final UI.
+The key feature, “Safe-to-Spend,” shows a single clear amount so users don’t have to do any calculations.
+This helps reduce financial stress and makes money management simple.
+Looking back, I’d simplify onboarding and let the app learn from user behavior over time instead of asking too much upfront.
 
 ## 5. Why you want to join Amber
 
-_3–5 sentences. Please don't write "I'm passionate about design." Tell us what specifically pulls you to Amber — the product, the students we serve, the team, the problem space. Be honest._
+Amber stands out to me because it solves a genuinely complex problem—helping students make high-stakes housing decisions—and turns it into a clear, usable experience. I’m also aligned with its AI-native approach, since I already use tools like Claude and Cursor to think through interactions faster. Finally, the chance to work on real features end-to-end is exactly how I like to learn and build.
 
 ---
 

@@ -4,23 +4,31 @@
 
 ## 1. Name
 
-_Your full name._
+Anjali Mahajan
 
 ## 2. Portfolio
 
-_Link to your portfolio, site, Dribbble, Behance, Notion — anywhere we can see your work._
+https://anjalimahajan.framer.website
 
 ## 3. LinkedIn
 
-_Link to your LinkedIn profile._
+www.linkedin.com/in/anjali-mahajann
 
 ## 4. A project you've shipped recently
 
-_Link to something you've shipped in the last 6–12 months. Add 2–4 sentences: what it is, what you did on it, and what you'd change now._
+Project Link: https://www.behance.net/gallery/242946455/Enhancing-Safety-in-Indias-LPG-Delivery-Service
+
+I worked on a project called the LPG Safety Wing for Indane, where we designed a system to make LPG deliveries safer through better checks, training, and tracking. I worked on this with a teammate, focusing on research, user flows, and designing the system.
+I researched accidents and spoke to users, then mapped flows and designed a digital system along with a service blueprint.
+We presented it as a complete project with mockups and documentation. Looking back, I’d simplify the membership options to just basic and premium, and also include safety checks for newer cylinders and pipelines.
+
 
 ## 5. Why you want to join Amber
 
-_3–5 sentences. Please don't write "I'm passionate about design." Tell us what specifically pulls you to Amber — the product, the students we serve, the team, the problem space. Be honest._
+I’m interested in Amber because the problem you’re solving feels very real. Moving to a new place is already stressful, and figuring out accommodation adds to that, so making it easier and more trustworthy is something I find meaningful.
+I’ve also been exploring and learning more about how AI can be used in product experiences, so I’m curious how you’re using it to simplify decisions and guide users.
+I’ve also come across the team and the kind of work you’re doing, and the energy and approach really stood out to me. It feels like a place where I can learn a lot, work with people who care about what they’re building, and grow in the process.
+
 
 ---
 

@@ -42,4 +42,3 @@ I’d want to work on something like this where design can actually reduce that 
 
 ---
 
-_By opening this PR you confirm the work above is yours and that you've read [the role](https://github.com/sudo-anmol/design-internship)._

@@ -22,9 +22,12 @@ What I really took away from this was how small UX decisions can have a big impa
 
 
 ## 5. Why you want to join Amber
-Amber feels kinda personal to me. I’ve actually thought about moving abroad, and the most confusing part wasn’t the move, it was figuring out where I’d live, what’s legit, what’s not, and how to decide without being there.
-That’s why Amber stands out. It’s solving something people are already stressed about, and if the experience is even slightly unclear, it just adds to that chaos.
-I’d want to work on something like this where design can actually reduce that confusion and make things feel a bit more sorted. It also feels like the kind of place where I’d grow a lot as a designer, because the problems are real, messy, and not surface level.
+I want to grow as a designer by working on problems where the challenge isn’t just how something looks, but how people think and make decisions.
+
+Lately, I’ve been exploring how AI is changing user behavior—especially how easily people accept answers without really engaging with them. What interests me is designing systems that structure information better, surface trade-offs, and make decisions feel clearer and more intentional rather than overwhelming.
+
+What also stood out to me about this opportunity is how Amber approaches hiring through GitHub. It makes the process feel closer to real product work instead of a traditional application. Even small details—like how the page reveals information as you scroll—show a thoughtful approach to guiding user attention and reducing cognitive load.
+I’m looking for an environment where I can go beyond screens and be involved in shaping the product end-to-end—questioning decisions, thinking through edge cases, and owning outcomes. Amber feels like the kind of place where I can develop that way of thinking while contributing meaningfully.
 
 
 

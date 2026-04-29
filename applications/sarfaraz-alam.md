@@ -1,7 +1,6 @@
-# Application: Md. Sarfaraz ALam
+# Application: Sarfaraz Alam
 
-> **Instructions:** Copy this file to `applications/your-name.md` (use kebab-case — e.g. `priya-sharma.md`).
-> Fill in each of the 5 sections below. Delete these instructions before you open your PR.
+
 
 ---
 

@@ -31,7 +31,7 @@ The problem statement:
 Goodreads has 150M+ users but people actively avoid it, I wanted to understand why.
 
 What I found:
-* Non-readers aren't uninterested in books — Goodreads just makes starting feel overwhelming
+* Non-readers aren't uninterested in books, Goodreads just makes starting feel overwhelming
 * People discover books on Instagram and Pinterest, and only land on Goodreads to read reviews, discovery is completely broken
 * Readers are used to current social media habits, i.e., scrolling, taste based feed section. Genres are outdates, vibes is the new wave.
 

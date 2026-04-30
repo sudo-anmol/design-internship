@@ -4,14 +4,13 @@
 Tahseen Raza
 
 ## 2. Portfolio
-https://github.com/your-username
-
+https://my-new-portfolio-blond-three.vercel.app/
 ## 3. LinkedIn
-https://linkedin.com/in/your-link
+https://www.linkedin.com/in/tahseen-raza1/
 
 ## 4. A project you've shipped recently
 
-DSA Visualization Platform – [your link]
+DSA Visualization Platform – (https://dsa-visualization-two.vercel.app/)
 
 I built an AI-powered platform that lets users visualize their own code execution step-by-step, instead of relying on predefined examples. It converts code into structured execution steps and animates how the algorithm runs, including loops and recursion.
 
